@@ -10,28 +10,36 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.TextView;
 import android.os.Build;
 
-public class ViewPrincipal extends ActionBarActivity {
-	public final static String EXTRA_MESSAGE = "br.ufg.inf.mobile.appandroid.MESSAGE";
+public class ExibirMensagemActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_view_principal);
+		//setContentView(R.layout.activity_exibir_mensagem);
+		
+		Intent intent = getIntent();
+		String mensagem = intent.getStringExtra(ViewPrincipal.EXTRA_MESSAGE);
+		
+		TextView textView = new TextView(this);
+		textView.setTextSize(40);
+		textView.setText(mensagem);
+		
+		setContentView(textView);
 
-		if (savedInstanceState == null) {
+		/*if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		}*/
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.view_principal, menu);
+		getMenuInflater().inflate(R.menu.exibir_mensagem, menu);
 		return true;
 	}
 
@@ -58,18 +66,10 @@ public class ViewPrincipal extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_view_principal,
+			View rootView = inflater.inflate(R.layout.fragment_exibir_mensagem,
 					container, false);
 			return rootView;
 		}
-	}
-	
-	public void enviarMensagem(View view) {
-		Intent intent = new Intent(this, ExibirMensagemActivity.class);
-	    EditText editText = (EditText) findViewById(R.id.edit_message);
-	    String mensagem = editText.getText().toString();
-	    intent.putExtra(EXTRA_MESSAGE, mensagem);
-	    startActivity(intent);
 	}
 
 }

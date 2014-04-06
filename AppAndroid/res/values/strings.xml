@@ -3,7 +3,9 @@
 
     <string name="app_name">AppAndroid</string>
     <string name="action_settings">Configurações</string>
-    <string name="edit_message">Digite seu nome...</string>
+    <string name="edit_message">Digite uma mensagem...</string>
     <string name="button_send">Enviar</string>
+    <string name="title_activity_exibir_mensagem">Exibir Mensagem</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

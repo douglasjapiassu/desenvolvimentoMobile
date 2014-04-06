@@ -1097,12 +1097,15 @@ containing a value of this type.
         public static final int abc_popup_menu_item_layout=0x7f030014;
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
-        public static final int activity_view_principal=0x7f030017;
-        public static final int fragment_view_principal=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int activity_exibir_mensagem=0x7f030017;
+        public static final int activity_view_principal=0x7f030018;
+        public static final int fragment_exibir_mensagem=0x7f030019;
+        public static final int fragment_view_principal=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
-        public static final int view_principal=0x7f0c0000;
+        public static final int exibir_mensagem=0x7f0c0000;
+        public static final int view_principal=0x7f0c0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1149,6 +1152,8 @@ containing a value of this type.
         public static final int app_name=0x7f0a000d;
         public static final int button_send=0x7f0a0010;
         public static final int edit_message=0x7f0a000f;
+        public static final int hello_world=0x7f0a0012;
+        public static final int title_activity_exibir_mensagem=0x7f0a0011;
     }
     public static final class style {
         /** 

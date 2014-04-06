@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="br.ufg.inf.mobile.appandroid.ExibirMensagemActivity"
+            android:label="@string/title_activity_exibir_mensagem"
+            android:parentActivityName="br.ufg.inf.mobile.appandroid.ViewPrincipal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.ufg.inf.mobile.appandroid.ViewPrincipal" />
+        </activity>
     </application>
 
 </manifest>
